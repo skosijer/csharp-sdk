@@ -1,0 +1,106 @@
+{
+  "liblabVersion": "2.0.20",
+  "date": "2024-03-22T19:00:37.704Z",
+  "config": {
+    "usesFormData": false,
+    "authentication": {
+      "access": {
+        "prefix": "Bearer"
+      }
+    },
+    "environmentVariables": [],
+    "fileOutput": "/tmp",
+    "inferServiceNames": false,
+    "httpLibrary": {
+      "name": "axios",
+      "packages": {
+        "axios": "^1.6.8"
+      },
+      "languages": ["typescript"]
+    },
+    "auth": ["bearer"],
+    "sdkName": "test-sdk",
+    "sdkVersion": "1.0.0",
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150
+    },
+    "multiTenant": true,
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    },
+    "generateEnv": true,
+    "injectedModels": [],
+    "includeWatermark": false,
+    "license": {
+      "type": "MIT"
+    },
+    "ignoreFiles": [],
+    "deliveryMethod": "zip",
+    "apiId": 222,
+    "liblabVersion": "2",
+    "deliveryMethods": ["zip"],
+    "languages": ["csharp"],
+    "apiVersion": "1.0.0",
+    "apiName": "test-api",
+    "specFilePath": "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.json",
+    "createDocs": false,
+    "languageOptions": {
+      "csharp": {
+        "githubRepoName": "csharp-sdk",
+        "ignoreFiles": [],
+        "sdkVersion": "1.0.0"
+      },
+      "typescript": {
+        "bundle": false,
+        "exportClassDefault": false,
+        "httpClient": "axios",
+        "npmName": "",
+        "npmOrg": "",
+        "githubRepoName": "typescript-sdk",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "4.0.0"
+      }
+    },
+    "publishing": {
+      "githubOrg": "skosijer"
+    },
+    "includeOptionalSnippetParameters": true,
+    "devContainer": false,
+    "responseHeaders": false,
+    "specUrl": "https://dev-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/222/open-api-spec.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA3C2RXH7MWUCMN7ON%2F20240322%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240322T190033Z&X-Amz-Expires=43200&X-Amz-Signature=c513ccc280b5e89e8621252143c0f7a8f826c4647f33bb71bd6a69384cad6e8b&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "githubRepoName": "csharp-sdk",
+    "language": "csharp",
+    "hooks": {
+      "enabled": false,
+      "sourceDir": ""
+    }
+  },
+  "files": [
+    "TestSdk/TestSdk.csproj",
+    "install.sh",
+    "TestSdk/Services/BaseService.cs",
+    "TestSdk/Http/Handlers/TokenHandler.cs",
+    "Example/Example.csproj",
+    "Example/Program.cs",
+    "Example/.gitignore",
+    "TestSdk/Http/Serialization/SerializationStyle.cs",
+    "TestSdk/Http/Serialization/QuerySerializationStyle.cs",
+    "TestSdk/Http/Serialization/PathSerializationStyle.cs",
+    "TestSdk/Http/Serialization/Serializer.cs",
+    "TestSdk/Http/RequestBuilder.cs",
+    "TestSdk/Config/TestSdkConfig.cs",
+    "TestSdk/Http/Environment.cs",
+    "TestSdk/TestSdkClient.cs",
+    "TestSdk/Http/Handlers/RetryHandler.cs",
+    "TestSdk/.gitignore",
+    "./LICENSE",
+    "TestSdk/Models/Pet.cs",
+    "TestSdk/Services/PetsService.cs",
+    "TestSdk/README.md"
+  ]
+}
