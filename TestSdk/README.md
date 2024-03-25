@@ -47,7 +47,7 @@ using TestSdk;
 
 var client = new TestSdkClient();
 
-var response = await client.Pets.ListPetsAsync(81);
+var response = await client.Pets.ListPetsAsync(47);
 
 Console.WriteLine(response);
 ```
@@ -60,7 +60,7 @@ using TestSdk.Models;
 
 var client = new TestSdkClient();
 
-var input = new Pet(2, "name");
+var input = new Pet(9, "name");
 
 await client.Pets.CreatePetsAsync(input);
 ```
